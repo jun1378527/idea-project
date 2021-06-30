@@ -116,9 +116,7 @@ const handleClickFile = (e) => {
 
 const handleClickPlusBtn = (e) => {
     const selectedLine = e.target.parentNode;
-    let reviewedCode;
-
-    reviewedCode = document.querySelector('.reviewed-code');
+    const reviewedCode = document.querySelector('.review-box:last-child>.reviewed-code');
     const newLine = document.createElement('div');
     newLine.classList.add('line');
     const contents = selectedLine.querySelectorAll('span');
