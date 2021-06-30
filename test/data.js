@@ -1,4 +1,3 @@
-// 원래 코드
 const fileContents = {
     1:
     [
@@ -17,11 +16,3 @@ const fileContents = {
         
     ],
 }
-
-// 리뷰1
-
-
-// 리뷰2
-
-
-// 리뷰3
