@@ -7422,7 +7422,14 @@ textarea.form-control-lg {
 .bg-dark {
   background-color: #212529 !important;
 }
-
+.bg-img {
+  background-image: url(https://cdn.pixabay.com/photo/2021/06/23/19/57/desktop-6359584_960_720.jpg) !important;
+  background-size: 100%;
+}
+.bg-img2 {
+  background-image: url(https://cdn.pixabay.com/photo/2021/06/23/17/26/fantasy-6359280_960_720.jpg);
+  background-size: 100%;
+}
 .bg-body {
   background-color: #fff !important;
 }
