@@ -89,12 +89,16 @@ const handleSubmit = (e) => {
     const editBtn = document.createElement('button');
     editBtn.innerText = '수정';
     editBtn.classList.add('edit-btn');
+    editBtn.addEventListener('click', handleEdit);
     const deleteBtn = document.createElement('button');
     deleteBtn.innerText = '삭제';
     deleteBtn.classList.add('delete-btn');
-    /**
-     * editBtn, deleteBtn에 수정, 삭제 이벤트 핸들러 만들어주시면 됩니다.
-     */
+    deleteBtn.addEventListener('click', handleDelete);
+    
+    const oldBtn = newReview.querySelectorAll('button');
+    for (const btn of oldBtn) {
+        btn.remove();
+    }
 
     addBtn.remove();
     newReview.replaceChild(text, textarea);
@@ -156,5 +160,30 @@ const clearCode = (fileNum) => {
         }
     }
 };
+
+const handleEdit = (e) => {
+    e.preventDefault();
+    const reviewBox = e.target.parentNode;
+    const oldReviewText = reviewBox.querySelector('p');
+    const editBtn = reviewBox.querySelector('.edit-btn');
+    
+    const reviewText = document.createElement('textarea');
+    reviewText.classList.add('review-text');
+    reviewText.value = oldReviewText.innerText;
+    const addBtn = document.createElement('button');
+    addBtn.innerText = '제출';
+    addBtn.type = 'submit';
+    addBtn.classList.add('add-btn');
+    reviewBox.addEventListener('submit', handleSubmit);
+    
+    reviewBox.replaceChild(reviewText, oldReviewText);
+    reviewBox.replaceChild(addBtn, editBtn);
+    
+}
+
+const handleDelete = (e) => {
+    const reviewBox = e.target.parentNode;
+    reviewBox.remove();
+}
 
 init();
