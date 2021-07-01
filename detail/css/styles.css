@@ -305,7 +305,7 @@ label {
   display: inline-block;
 }
 
-button {
+/* button {
   border-radius: 0;
 }
 
@@ -322,12 +322,12 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
+} */
 
-button,
+/* button,
 select {
   text-transform: none;
-}
+} */
 
 [role=button] {
   cursor: pointer;
@@ -634,7 +634,7 @@ progress {
   margin: 10px;
   background-color: rgb(30,30,30);
   border: rgb(51, 51, 51);
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   height: 610px;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -647,12 +647,13 @@ progress {
 }
 
 .left-container .code-container .num {
+
   display: inline-block;
   width: 20px;
 }
 
 .right-container {
-  color: black;
+  color: white;
   width: 100%;
   display: grid;
 }
@@ -666,7 +667,7 @@ progress {
 
 
 .review-box {
-  background-color: rgb(255,255,255);
+  background-color: #333;
   border-radius: 0.5em;
   min-width: 95%;
   max-width: 95%;
@@ -678,7 +679,7 @@ progress {
 
 .right-container .review-container .reviewed-code {
   border: none;
-  color: rgb(26,115,232);
+  color: #2079ff
 }
 
 .right-container .review-container .reviewed-code .line {
@@ -686,12 +687,14 @@ progress {
 }
 
 .review-text{
+  width:100%;
   background-color: transparent;
-  color:black;
+  color:white;
+  border:none;
 }
 
 textarea::placeholder{
-  color:grey;
+  color:rgb(218, 218, 218);
 }
 
 .codes {
@@ -704,6 +707,7 @@ textarea::placeholder{
 }
 
 .line {
+
   height: 1.5rem;
 }
 
@@ -724,7 +728,9 @@ textarea::placeholder{
   margin-right: 10px;
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
+  border: rgb(30, 30, 30);
   border-radius: 0.5em;
+  background-color: #333;
 
 }
 
@@ -2612,11 +2618,6 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check:disabled + .btn {
-  pointer-events: none;
-  filter: none;
-  opacity: 0.65;
-}
 
 .form-range {
   width: 100%;
@@ -3979,7 +3980,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: white;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4315,26 +4316,26 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: #0d6efd;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: white;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: #0d6efd;
 }
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
+  color: white;
   border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
@@ -4346,7 +4347,7 @@ textarea.form-control-lg {
 .navbar-light .navbar-text a,
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: #0d6efd;
 }
 
 .navbar-dark .navbar-brand {
@@ -6612,9 +6613,9 @@ textarea.form-control-lg {
   border-top: 0 !important;
 }
 
-/* .border-end {
+.border-end {
   border-right: 1px solid rgb(51,51,51) !important;
-} */
+}
 
 .border-end-0 {
   border-right: 0 !important;
@@ -11025,6 +11026,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .left-sidebar {
+  margin-top: 200px;;
   flex-basis: 10%;
   color:white;
 }
@@ -11043,13 +11045,57 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .create-btn {
-  width: 50%;
+  margin-top: 10px;
+  width: 95%;
   height: 30px;
+  border-radius: 0.8rem;
+  background-color: #333333;
+  border: none;
+  color:white;
 }
 
 .plus-btn {
-  padding: 0;
-  width: 15px;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  width: 20px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  color:transparent;
+}
+
+.add-btn {
+  color:white;
+  background-color: #0d6efd;
+  border:none;
+  border-radius: 0.3rem;
+  width: 40px;
+  height:30px;
+  margin-top: 10px;
+  margin-right:10px;
+}
+
+.delete-btn {
+  color: rgb(233, 49, 49);
+  background-color: rgb(30, 30, 30);
+  border:none;
+  border-radius: 0.3rem;
+  width: 40px;
+  height:30px;
+  margin-top: 10px;
+  margin-right:10px;
+}
+
+.edit-btn{
+  color:whitesmoke;
+  background-color: rgb(30, 30, 30);
+  border:none;
+  border-radius: 0.3rem;
+  width: 40px;
+  height:30px;
+  margin-top: 10px;
+  margin-right:10px;
 }
 
 .hidden{
