@@ -616,17 +616,20 @@ progress {
   grid-template-columns: 1fr 1fr;
 }
 
-.submit, .review {
+.submit{
   display: grid;
   grid-template-rows: 3fr 1.3fr;
 
+}
+.review {
+  display: grid;
 }
 
 .codes {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.2fr 20fr;
   margin: 10px;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(30,30,30);
   border-radius: 0.5em;
 }
 
@@ -635,11 +638,13 @@ progress {
 }
 
 .codes2 {
-  margin: 10px;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(60, 60, 60);
   border-radius: 0.5em;
   border:none;
   color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 
 }
 
@@ -4900,6 +4905,7 @@ textarea.form-control-lg {
   text-decoration: none;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  height: 100%;
 }
 .list-group-item:first-child {
   border-top-left-radius: inherit;
@@ -6534,7 +6540,7 @@ textarea.form-control-lg {
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid rgb(51,51,51) !important;
 }
 
 .border-end-0 {
@@ -7480,6 +7486,18 @@ textarea.form-control-lg {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-darkgrey {
+  background-color: rgb(37, 37, 38);
+}
+
+.bg-codes {
+  background-color: rgb(30, 30, 30);
+}
+
+.bg-question {
+  background-color: rgb(51, 51, 51);
 }
 
 .bg-transparent {
@@ -10908,6 +10926,10 @@ textarea.form-control-lg {
 
 #page-content-wrapper {
   min-width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-rows: 0.5fr 9fr;
+
 }
 
 body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
@@ -10927,4 +10949,22 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
+}
+
+.left-sidebar {
+  flex-basis: 10%;
+  color:white;
+}
+
+.left-sidebar ul {
+  list-style: none;
+}
+
+.left-sidebar .depth2 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.left-sidebar .depth2:hover {
+  color: lightblue;
 }

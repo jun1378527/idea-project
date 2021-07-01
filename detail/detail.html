@@ -14,15 +14,16 @@
     <body>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">코리뷰</div>
+            <div class="border-end bg-darkgrey" id="sidebar-wrapper">
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">대충</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">여기</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">공간에</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">디렉토리를</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">표시하도록</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">하면좋을듯</a>
+                    <div class="left-sidebar">
+                        <ul>
+                            <li class="depth1">main</li>
+                            <li data-key=1 class="depth2">┕index.html</li>
+                            <li data-key=2 class="depth2">┕index.css</li>
+                            <li data-key=3 class="depth2">┕index.js</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -50,7 +51,7 @@
                     </div>
                 </nav>
                 <!-- Page content-->
-                <div class="main">
+                <div class="main bg-codes">
                     <div class="submit">
                         <div class="codes">
                             <div><input type="checkbox"><br><input type="checkbox"></div>
@@ -58,11 +59,10 @@
                             <div></div>
                             <code>a = Hello World!<br>print(a)</code>
                         </div>
-                        <div class="question"></div>
+                        <div class="question bg-question"></div>
                     </div>
                     <div class="review">
-                        <input type="text" class="codes2"></input>
-                        <div class="answer"></div>
+                        <div class="codes2"></div>
 
                     </div>
                 </div>
@@ -72,5 +72,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="test/data.js"></script>
+        <script src="test/js/test.js"></script>
     </body>
 </html>
