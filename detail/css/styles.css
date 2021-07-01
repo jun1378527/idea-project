@@ -652,7 +652,7 @@ progress {
 }
 
 .right-container {
-  color:white;
+  color: black;
   width: 100%;
   display: grid;
 }
@@ -664,19 +664,21 @@ progress {
   align-items: center;
 }
 
-.right-container .review-container .review-box {
-  margin: 10px;
-  background-color: rgb(30,30,30);
+
+.review-box {
+  background-color: rgb(255,255,255);
   border-radius: 0.5em;
-}
-.review-box{
-  min-width: 25rem;
+  min-width: 95%;
+  max-width: 95%;
   min-height: 3rem;
   padding: 1rem;
+  margin-top: 10px;
+
 }
+
 .right-container .review-container .reviewed-code {
   border: none;
-  color: white;
+  color: rgb(26,115,232);
 }
 
 .right-container .review-container .reviewed-code .line {
@@ -685,16 +687,18 @@ progress {
 
 .review-text{
   background-color: transparent;
-  color:white;
+  color:black;
 }
 
 textarea::placeholder{
-  color:white;
+  color:grey;
 }
 
 .codes {
   display: grid;
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right:10px;
   background-color: rgb(30,30,30);
   border-radius: 0.5em;
 }
@@ -719,7 +723,7 @@ textarea::placeholder{
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   border-radius: 0.5em;
 
 }
@@ -4017,6 +4021,7 @@ textarea.form-control-lg {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+  
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4097,6 +4102,7 @@ textarea.form-control-lg {
   list-style: none;
 }
 .navbar-nav .nav-link {
+  
   padding-right: 0;
   padding-left: 0;
 }
@@ -6606,9 +6612,9 @@ textarea.form-control-lg {
   border-top: 0 !important;
 }
 
-.border-end {
+/* .border-end {
   border-right: 1px solid rgb(51,51,51) !important;
-}
+} */
 
 .border-end-0 {
   border-right: 0 !important;
