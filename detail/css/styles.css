@@ -669,7 +669,11 @@ progress {
   background-color: rgb(30,30,30);
   border-radius: 0.5em;
 }
-
+.review-box{
+  min-width: 25rem;
+  min-height: 3rem;
+  padding: 1rem;
+}
 .right-container .review-container .reviewed-code {
   border: none;
   color: white;
