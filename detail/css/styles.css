@@ -616,25 +616,87 @@ progress {
   grid-template-columns: 1fr 1fr;
 }
 
-.submit{
+.left-container{
   display: grid;
   grid-template-rows: 3fr 1.3fr;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
 }
-.review {
+.left-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+
+}
+
+.left-container .code-container {
+  display: grid;
+  margin: 10px;
+  background-color: rgb(30,30,30);
+  border: rgb(51, 51, 51);
+  border-radius: 0.5em;
+  height: 610px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.code-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+
+}
+
+.left-container .code-container .num {
+  display: inline-block;
+  width: 20px;
+}
+
+.right-container {
+  color:white;
+  width: 100%;
   display: grid;
 }
 
-.codes {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 0.2fr 20fr;
+.right-container .review-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-container .review-container .review-box {
   margin: 10px;
   background-color: rgb(30,30,30);
   border-radius: 0.5em;
 }
 
-.line{
+.right-container .review-container .reviewed-code {
+  border: none;
   color: white;
+}
+
+.right-container .review-container .reviewed-code .line {
+  border: none;
+}
+
+.review-text{
+  background-color: transparent;
+  color:white;
+}
+
+textarea::placeholder{
+  color:white;
+}
+
+.codes {
+  display: grid;
+  margin: 10px;
+  background-color: rgb(30,30,30);
+  border-radius: 0.5em;
+}
+
+.line {
+  height: 1.5rem;
 }
 
 .codes2 {
@@ -648,7 +710,7 @@ progress {
 
 }
 
-.question {
+.question-container {
   margin-top: 0px;
   margin-left: 10px;
   margin-right: 10px;
@@ -6417,6 +6479,7 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
+
 }
 
 .d-inline-flex {
@@ -10967,4 +11030,18 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .left-sidebar .depth2:hover {
   color: lightblue;
+}
+
+.create-btn {
+  width: 50%;
+  height: 30px;
+}
+
+.plus-btn {
+  padding: 0;
+  width: 15px;
+}
+
+.hidden{
+  display:none;
 }
