@@ -56,7 +56,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #202d3e;
+  background-color: #040d1c;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -4194,17 +4194,17 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: rgba(229, 230, 243, 0.966);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(42, 228, 253, 0.925);
 }
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(38, 16, 241, 0.952);
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(40, 37, 245, 0.9);
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
@@ -6500,6 +6500,9 @@ textarea.form-control-lg {
 .border-bottom-dark{
   border-bottom: 1px solid var(--bs-dark) !important; 
 }
+.border-bottom-navy{
+
+}
 .border-bottom-0 {
   border-bottom: 0 !important;
 }
@@ -7428,14 +7431,15 @@ textarea.form-control-lg {
 .bg-light {
   background-color: #f8f9fa !important;
 }
-
+.bg-lightdark{
+  background-color: #002448 !important;
+}
 .bg-dark {
   background-color: #212529 !important;
 }
 .bg-img {
   background-image: url(https://cdn.pixabay.com/photo/2018/03/05/03/57/pattern-3199922_960_720.png) !important;
   background-size: 100% 297px;
-  border-bottom: 1px solid rgb(20, 20, 20);
 }
 .bg-img2 {
   background-image: url(https://cdn.pixabay.com/photo/2021/06/23/17/26/fantasy-6359280_960_720.jpg);
