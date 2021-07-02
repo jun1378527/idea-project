@@ -731,7 +731,7 @@ textarea::placeholder{
   border: rgb(30, 30, 30);
   border-radius: 0.5em;
   background-color: #333;
-
+  padding: 10px;
 }
 
 .answer {
@@ -11026,7 +11026,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .left-sidebar {
-  margin-top: 200px;;
+  margin-top: 60px;
   flex-basis: 10%;
   color:white;
 }
