@@ -6501,7 +6501,7 @@ textarea.form-control-lg {
   border-bottom: 1px solid var(--bs-dark) !important; 
 }
 .border-bottom-navy{
-
+  border-bottom: 0px solid var(--bs-dark) !important; 
 }
 .border-bottom-0 {
   border-bottom: 0 !important;
