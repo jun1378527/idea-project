@@ -6501,7 +6501,7 @@ textarea.form-control-lg {
   border-bottom: 1px solid var(--bs-dark) !important; 
 }
 .border-bottom-navy{
-  border-bottom: 0px solid var(--bs-dark) !important; 
+  border-bottom: 1px solid #2d3337 !important; 
 }
 .border-bottom-0 {
   border-bottom: 0 !important;
@@ -7432,7 +7432,7 @@ textarea.form-control-lg {
   background-color: #f8f9fa !important;
 }
 .bg-lightdark{
-  background-color: #002448 !important;
+  background-color: rgb(34 34 34)!important;
 }
 .bg-dark {
   background-color: #212529 !important;
